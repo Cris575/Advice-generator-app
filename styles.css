@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --font-family: "Manrope", serif;
+  --background-color: hsl(218, 23%, 16%);
+  --container-color: hsl(217, 19%, 24%);
+  --button-color: rgb(82, 255, 168);
+  --text-color: white;
+  --id-color: #53ffa9;
+  --box-sizing: border-box;
+}
+
+html {
+  box-sizing: var(--box-sizing);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 540px;
+  height: 332px;
+  padding: 20px 70px;
+  border-radius: 15px;
+  background-color: var(--container-color);
+}
+
+.advice {
+  font-size: 25px;
+  color: var(--text-color);
+  height: 112px;
+}
+
+.id {
+  letter-spacing: 5px;
+  font-size: 13px;
+  color: var(--id-color);
+  font-weight: 100;
+}
+
+.button {
+  position: absolute;
+  bottom: -30px;
+  height: 63px;
+  width: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-color);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: box-shadow 0.7s, color 0.3s;
+}
+
+.button:hover {
+  box-shadow: 0 0 35px var(--button-color);
+}
+
+.movile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .advice {
+    font-size: 1.3rem;
+  }
+  .id {
+    font-size: 15px;
+  }
+  .container {
+    padding: 20px 30px;
+  }
+
+  .dk {
+    display: none;
+  }
+  .movile {
+    display: block;
+  }
+}
