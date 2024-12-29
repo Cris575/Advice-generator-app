@@ -10,7 +10,7 @@ function getAdvice() {
     .then((response) => response.json())
     .then((data) => {
       const { id, advice } = data.slip;
-      advices.innerText = `"${advice}"`;
+      advices.innerText = `“${advice}”`;
       adviceId.innerText = id;
     });
 }
