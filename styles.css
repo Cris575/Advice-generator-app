@@ -42,8 +42,7 @@ body {
   text-align: center;
   width: 100%;
   max-width: 540px;
-  height: 332px;
-  padding: 20px 70px;
+  padding: 70px 70px;
   border-radius: 15px;
   background-color: var(--container-color);
 }
@@ -51,7 +50,7 @@ body {
 .advice {
   font-size: 25px;
   color: var(--text-color);
-  height: 112px;
+  /* height: 112px; */
 }
 
 .id {
